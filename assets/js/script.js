@@ -5,9 +5,9 @@ let minItem = document.querySelector("#min");
 let secItem = document.querySelector("#sec");
 
 let countDown = () => {
-    let futureDate = new Date("30 Sep 2023");
+    let futureDate = new Date();
     let currentDate = new Date();
-    let myDate = futureDate - currentDate;
+    let myDate = futureDate - currentDate + 1;
 
     let days = Math.floor(myDate / 1000 / 60 / 60 / 24);
     let hours = Math.floor(myDate / 1000 / 60 / 60) % 24;
