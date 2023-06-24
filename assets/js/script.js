@@ -7,7 +7,7 @@ let secItem = document.querySelector("#sec");
 let countDown = () => {
     let futureDate = new Date();
     let currentDate = new Date();
-    let myDate = futureDate - currentDate + 1;
+    let myDate = futureDate - currentDate + 0.5;
 
     let days = Math.floor(myDate / 1000 / 60 / 60 / 24);
     let hours = Math.floor(myDate / 1000 / 60 / 60) % 24;
